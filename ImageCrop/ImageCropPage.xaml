@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage 
+		xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:local="clr-namespace:ImageCrop" 
+		x:Class="ImageCrop.ImageCropPage">
+	<AbsoluteLayout>
+		<Image Source="xamarin.png" Aspect="AspectFill" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" />
+
+		<Grid x:Name="box" RowSpacing="0" ColumnSpacing="0" AbsoluteLayout.LayoutBounds="0, 0, 0, 0" AbsoluteLayout.LayoutFlags="None">
+		    <Grid.RowDefinitions>
+		        <RowDefinition Height="5" />
+		        <RowDefinition Height="*" />
+		        <RowDefinition Height="5" />
+		    </Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="5" />
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="5" />
+			</Grid.ColumnDefinitions>
+		    <BoxView Grid.Row="0" Grid.Column="0" BackgroundColor="Red"></BoxView>
+			<BoxView Grid.Row="0" Grid.Column="1" BackgroundColor="Red"></BoxView>
+			<BoxView Grid.Row="0" Grid.Column="2" BackgroundColor="Red"></BoxView>
+			<BoxView Grid.Row="1" Grid.Column="0" BackgroundColor="Red"></BoxView>
+			<BoxView Grid.Row="1" Grid.Column="2" BackgroundColor="Red"></BoxView>
+			<BoxView Grid.Row="2" Grid.Column="0" BackgroundColor="Red"></BoxView>
+			<BoxView Grid.Row="2" Grid.Column="1" BackgroundColor="Red"></BoxView>
+			<BoxView Grid.Row="2" Grid.Column="2" BackgroundColor="Red"></BoxView>
+		</Grid>
+
+		<BoxView x:Name="topLeft" BackgroundColor="Red" AbsoluteLayout.LayoutBounds="0, 0, 0, 0" AbsoluteLayout.LayoutFlags="None" />
+		<BoxView x:Name="topRight" BackgroundColor="Red" AbsoluteLayout.LayoutBounds="0, 0, 0, 0" AbsoluteLayout.LayoutFlags="None" />
+		<BoxView x:Name="bottomLeft" BackgroundColor="Red" AbsoluteLayout.LayoutBounds="0, 0, 0, 0" AbsoluteLayout.LayoutFlags="None" />
+		<BoxView x:Name="bottomRight" BackgroundColor="Red" AbsoluteLayout.LayoutBounds="0, 0, 0, 0" AbsoluteLayout.LayoutFlags="None" />
+	</AbsoluteLayout>
+</ContentPage>
