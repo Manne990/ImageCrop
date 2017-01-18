@@ -78,6 +78,7 @@ namespace ImageCrop
                     break;
 
                 case GestureStatus.Completed:
+                case GestureStatus.Canceled:
                     PrintCropSize();
                     break;
             }
@@ -96,6 +97,7 @@ namespace ImageCrop
                     break;
 
                 case GestureStatus.Completed:
+                case GestureStatus.Canceled:
                     PrintCropSize();
                     break;
             }
@@ -114,6 +116,7 @@ namespace ImageCrop
                     break;
 
                 case GestureStatus.Completed:
+                case GestureStatus.Canceled:
                     PrintCropSize();
                     break;
             }
@@ -132,6 +135,7 @@ namespace ImageCrop
                     break;
 
                 case GestureStatus.Completed:
+                case GestureStatus.Canceled:
                     PrintCropSize();
                     break;
             }
@@ -193,7 +197,7 @@ namespace ImageCrop
                 newRect.Height = box.Height;
             }
 
-            return newRect;
+            return new Rectangle((int)newRect.Left, (int)newRect.Top, (int)newRect.Width, (int)newRect.Height);
         }
 
         private void PrintCropSize()
